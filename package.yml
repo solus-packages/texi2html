@@ -1,0 +1,18 @@
+name       : texi2html
+version    : 5.0
+release    : 1
+source     :
+    - http://download.savannah.gnu.org/releases/texi2html/texi2html-5.0.tar.bz2 : e8a98b0ee20c495a6ab894398a065ef580272dbd5a15b1b19e8bd1bc89d9f9fa
+license    : GPL-2.0
+component  : programming.tools
+summary    : Converts texinfo documents to HTML
+description: |
+    Converts texinfo documents to HTML
+rundeps    :
+    - perl
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
